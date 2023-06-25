@@ -32,6 +32,7 @@ public class Generators {
 
 			}
 			case "3": {
+
 				printQuitMsg();
 				break;
 			}

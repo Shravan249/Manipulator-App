@@ -10,5 +10,8 @@ public interface NumberInterface {
 	public void pairs(int num[],int target);
 	public void triplets(int num[],int target);
 	public void fibanocci(int count);
+	public void evenNumbersBetweenMandN(int m,int n);
+	public void oddNumbersBetweenMandN(int m,int n);
+	public void powerOfNumber(int num,int pow);
 	
 }

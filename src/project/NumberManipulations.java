@@ -172,4 +172,37 @@ public class NumberManipulations implements NumberInterface {
 		
 	}
 
+	@Override
+	public void evenNumbersBetweenMandN(int m, int n) {
+		
+		for(int i=m;i<=n;i++) {
+			
+			if(i%2==0) {
+             System.out.print(i+" ");
+		}
+			
+
+			}
+	}
+
+	@Override
+	public void powerOfNumber(int num, int pow) {
+		
+		int result=(int) Math.pow(num, pow)	;
+	     System.out.println(result);	
+	}
+
+	@Override
+	public void oddNumbersBetweenMandN(int m, int n) {
+		
+		for(int i=m;i<=n;i++) {
+			
+			if(i%2==0) {
+             System.out.print(i+" ");
+		}
+			
+
+			}
+	}
+
 }

@@ -25,7 +25,8 @@ public class NumberGenerator extends NumberManipulations {
 				int num = sc.nextInt();
 				palidrome(num);
 				Thread.sleep(3000);
-				printMenu();break;
+				printMenu();
+				break;
 
 			}
 			case "2": {
@@ -33,7 +34,8 @@ public class NumberGenerator extends NumberManipulations {
 				int num = sc.nextInt();
 				prime(num);
 				Thread.sleep(3000);
-				printMenu();break;
+				printMenu();
+				break;
 
 			}
 			case "3": {
@@ -41,7 +43,8 @@ public class NumberGenerator extends NumberManipulations {
 				int num = sc.nextInt();
 				evenOrOdd(num);
 				Thread.sleep(3000);
-				printMenu();break;
+				printMenu();
+				break;
 
 			}
 			case "4": {
@@ -49,7 +52,8 @@ public class NumberGenerator extends NumberManipulations {
 				int num = sc.nextInt();
 				multiplication(num);
 				Thread.sleep(3000);
-				printMenu();break;
+				printMenu();
+				break;
 
 			}
 			case "5": {
@@ -57,38 +61,41 @@ public class NumberGenerator extends NumberManipulations {
 				int num = sc.nextInt();
 				reverseNumber(num);
 				Thread.sleep(3000);
-				printMenu();break;
+				printMenu();
+				break;
 
 			}
 			case "6": {
 
 				System.out.println("Enter the size of array");
-				int size=sc.nextInt();
-				int[] num = new int[size];  
+				int size = sc.nextInt();
+				int[] num = new int[size];
 				System.out.println("Enter the Array elements");
-				for(int i=0; i<size; i++) {
+				for (int i = 0; i < size; i++) {
 					num[i] = sc.nextInt();
 				}
 				System.out.println("Enter the Number");
 				int target = sc.nextInt();
 				pairs(num, target);
 				Thread.sleep(3000);
-				printMenu();break;
+				printMenu();
+				break;
 
 			}
 			case "7": {
 				System.out.println("Enter the size of array");
-				int size=sc.nextInt();
-				int[] num = new int[size];  
+				int size = sc.nextInt();
+				int[] num = new int[size];
 				System.out.println("Enter the Array elements");
-				for(int i=0; i<size; i++) {
+				for (int i = 0; i < size; i++) {
 					num[i] = sc.nextInt();
 				}
 				System.out.println("Enter the number");
 				int target = sc.nextInt();
 				triplets(num, target);
 				Thread.sleep(3000);
-				printMenu();break;
+				printMenu();
+				break;
 
 			}
 
@@ -97,10 +104,46 @@ public class NumberGenerator extends NumberManipulations {
 				int count = sc.nextInt();
 				fibanocci(count);
 				Thread.sleep(3000);
-				printMenu();break;
+				printMenu();
+				break;
 
 			}
+
 			case "9": {
+
+				System.out.println("Enter the Start Number");
+				int m = sc.nextInt();
+				System.out.println("Enter the End Number");
+				int n= sc.nextInt();
+				evenNumbersBetweenMandN(m,n);
+				Thread.sleep(3000);
+				printMenu();
+				break;
+
+			}
+			case "10": {
+
+				System.out.println("Enter the Start Number");
+				int m = sc.nextInt();
+				System.out.println("Enter the End Number");
+				int n= sc.nextInt();
+				oddNumbersBetweenMandN(m,n);
+				Thread.sleep(3000);
+				printMenu();
+				break;
+			}
+			case "11": {
+
+				System.out.println("Enter the Number");
+				int num = sc.nextInt();
+				System.out.println("Enter the Power Number");
+				int pow= sc.nextInt();
+				powerOfNumber(num,pow);
+				Thread.sleep(3000);
+				printMenu();
+				break;
+			}
+			case "12": {
 
 				Generators gen = new Generators();
 				gen.printWelcome();
@@ -139,7 +182,10 @@ public class NumberGenerator extends NumberManipulations {
 		System.out.println("Press 6 : Pairs  addition of a given Array");
 		System.out.println("Press 7 : Triplets  Addition in a given Array");
 		System.out.println("Press 8 : Fibnociss series");
-		System.out.println("Press 9 : Quit");
+		System.out.println("Press 9 :  Even numbers between two number");
+		System.out.println("Press 10 : Odd numbers between two number");
+		System.out.println("Press 11 : Power of a number");
+		System.out.println("Press 12 : Quit");
 		System.out.print("Choice : ");
 
 	}
