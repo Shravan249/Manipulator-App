@@ -197,7 +197,7 @@ public class NumberManipulations implements NumberInterface {
 		
 		for(int i=m;i<=n;i++) {
 			
-			if(i%2==0) {
+			if(i%2==1) {
              System.out.print(i+" ");
 		}
 			
